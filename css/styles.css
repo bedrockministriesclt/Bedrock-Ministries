@@ -493,3 +493,512 @@ button, input, textarea, select { font: inherit; }
   .board-grid { gap: 18px; }
 }
 
+
+
+/* =========================================================
+   V3 POLISH
+   Larger readable type, real logo treatment, natural photo crops,
+   simpler labels, stronger mobile behavior.
+========================================================= */
+
+:root {
+  --max: 1320px;
+  --gutter: clamp(24px, 4.6vw, 72px);
+  --section: clamp(82px, 8.5vw, 138px);
+}
+
+body {
+  font-size: 17px;
+  line-height: 1.72;
+}
+
+/* Section labels: readable, quiet, no decorative line */
+.section-label {
+  display: block;
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  color: inherit;
+}
+.section-label::after { content: none; }
+
+/* Header */
+.header-inner {
+  min-height: 118px;
+}
+.logo-mark {
+  width: clamp(225px, 20vw, 285px);
+  height: auto;
+}
+.logo-mark img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.desktop-nav {
+  gap: clamp(24px, 2.7vw, 44px);
+}
+.desktop-nav a {
+  font-size: 13px;
+  letter-spacing: .06em;
+}
+.desktop-nav .button {
+  min-height: 50px;
+  padding-inline: 24px;
+}
+.button {
+  min-height: 52px;
+  padding: 0 24px;
+  font-size: 13px;
+  letter-spacing: .08em;
+}
+.text-link {
+  font-size: 13px;
+  letter-spacing: .07em;
+}
+
+/* More comfortable copy */
+.page-hero .side-copy {
+  max-width: 440px;
+}
+.page-hero .side-copy p,
+.home-hero-side p,
+.split-copy p,
+.photo-copy .copy p,
+.path-card p,
+.story-card p,
+.faq details p {
+  font-size: 17px;
+  line-height: 1.78;
+}
+.rule-card p,
+.process-item p {
+  font-size: 16px;
+  line-height: 1.72;
+}
+.board-card p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-col a,
+.footer-col span {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.footer-col strong {
+  font-size: 12px;
+}
+.footer-bottom {
+  font-size: 12px;
+}
+
+/* Labels and small utility copy should still be readable */
+.rule-card .num,
+.process-item::before {
+  font-size: 13px;
+  letter-spacing: .08em;
+}
+.story-name {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--slate);
+}
+.blue-section .story-name,
+.slate-section .story-name {
+  color: inherit;
+}
+.cta-row small {
+  font-size: 13px;
+  letter-spacing: .04em;
+  text-transform: none;
+}
+
+/* Photo handling: preserve the photographs instead of forcing crops */
+.hero-image,
+.home-hero-image {
+  height: auto;
+}
+.hero-image img,
+.home-hero-image img,
+.full-bleed-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.path-grid {
+  align-items: start;
+}
+.path-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 34px;
+}
+.story-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 30px;
+}
+.board-card img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 18px;
+}
+.photo-copy,
+.photo-copy.reverse {
+  min-height: 0;
+  align-items: center;
+}
+.photo-copy .photo {
+  min-height: 0;
+}
+.photo-copy .photo img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Keep paired content visually connected without forcing equal photo crops */
+.path-card {
+  padding-top: 0;
+  border-top: 0;
+}
+.path-card h2 {
+  font-size: clamp(42px, 4vw, 60px);
+  line-height: 1.02;
+}
+.story-card {
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* A little less huge whitespace at extra wide desktop sizes */
+.home-hero {
+  padding-top: clamp(78px, 8vw, 118px);
+}
+.home-hero-grid {
+  padding-bottom: clamp(54px, 6vw, 86px);
+}
+.page-hero {
+  padding: clamp(74px, 8vw, 118px) 0 clamp(64px, 7vw, 96px);
+}
+.section-tight {
+  padding: clamp(64px, 7vw, 96px) 0;
+}
+
+/* Footer logo */
+.footer-mark {
+  width: 54px;
+}
+.footer-mark img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mobile menu sizing */
+.mobile-nav a {
+  font-size: 30px;
+  line-height: 1.15;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .header-inner {
+    min-height: 100px;
+  }
+  .logo-mark {
+    width: 220px;
+  }
+
+  .page-hero-grid,
+  .home-hero-grid {
+    gap: 30px;
+  }
+
+  .page-hero .side-copy,
+  .home-hero-side {
+    max-width: 620px;
+  }
+
+  .path-grid {
+    gap: 72px;
+  }
+
+  .photo-copy,
+  .photo-copy.reverse {
+    gap: 0;
+  }
+
+  .photo-copy .copy {
+    padding: clamp(44px, 6vw, 72px);
+  }
+}
+
+/* Mobile first refinements */
+@media (max-width: 680px) {
+  :root {
+    --gutter: 20px;
+    --section: 72px;
+  }
+
+  body {
+    font-size: 16.5px;
+  }
+
+  .header-inner {
+    min-height: 92px;
+  }
+
+  .logo-mark {
+    width: min(190px, 62vw);
+    height: auto;
+  }
+
+  .menu-toggle {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 auto;
+  }
+
+  .mobile-nav {
+    max-height: calc(100vh - 92px);
+    padding-top: 16px;
+  }
+
+  .mobile-nav a {
+    padding: 16px 0;
+    font-size: 29px;
+  }
+
+  .page-hero,
+  .home-hero {
+    padding-top: 54px;
+  }
+
+  .page-hero h1,
+  .home-hero h1 {
+    font-size: clamp(54px, 16vw, 76px);
+    line-height: .94;
+  }
+
+  .page-hero .side-copy p,
+  .home-hero-side p,
+  .split-copy p,
+  .photo-copy .copy p,
+  .path-card p,
+  .story-card p,
+  .faq details p {
+    font-size: 16.5px;
+    line-height: 1.72;
+  }
+
+  .rule-card p,
+  .process-item p {
+    font-size: 16px;
+  }
+
+  .section-label {
+    margin-bottom: 18px;
+    font-size: 15px;
+  }
+
+  .split {
+    gap: 28px;
+  }
+
+  .split h2,
+  .model-heading h2 {
+    font-size: clamp(43px, 12.5vw, 61px);
+    line-height: .98;
+  }
+
+  .path-grid,
+  .story-grid {
+    gap: 68px;
+  }
+
+  .path-card h2,
+  .story-card h2 {
+    font-size: clamp(38px, 11vw, 50px);
+  }
+
+  .path-card img,
+  .story-card img,
+  .hero-image img,
+  .home-hero-image img,
+  .photo-copy .photo img,
+  .board-card img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .photo-copy .copy {
+    padding: 42px 26px;
+  }
+
+  .rule-card,
+  .rule-card + .rule-card,
+  .process-item,
+  .process-item + .process-item {
+    padding: 28px 0 34px;
+  }
+
+  .rule-card .num,
+  .process-item::before {
+    margin-bottom: 18px;
+    font-size: 13px;
+  }
+
+  .cta-panel h2 {
+    margin-bottom: 42px;
+  }
+
+  .cta-row strong {
+    font-size: clamp(29px, 9vw, 40px);
+  }
+
+  .footer-top {
+    gap: 42px;
+  }
+
+  .footer-mark {
+    width: 48px;
+  }
+
+  .footer-bottom {
+    margin-top: 48px;
+  }
+}
+
+@media (max-width: 420px) {
+  .logo-mark {
+    width: 168px;
+  }
+
+  .header-inner {
+    min-height: 86px;
+  }
+
+  .mobile-nav {
+    max-height: calc(100vh - 86px);
+  }
+
+  .page-hero h1,
+  .home-hero h1 {
+    font-size: clamp(50px, 15vw, 66px);
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+
+/* =========================================================
+   STORIES V4
+   Full resident testimonials, preserved in their own words.
+========================================================= */
+
+.testimonial-stack {
+  display: grid;
+  gap: clamp(84px, 10vw, 150px);
+}
+
+.testimonial-row {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(48px, 7vw, 105px);
+  align-items: center;
+}
+
+.testimonial-row--reverse .testimonial-photo {
+  order: 2;
+}
+
+.testimonial-row--reverse .testimonial-copy {
+  order: 1;
+}
+
+.testimonial-photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.testimonial-copy {
+  max-width: 680px;
+}
+
+.testimonial-copy .story-name {
+  margin-bottom: 18px;
+}
+
+.testimonial-copy h2 {
+  margin: 0 0 26px;
+  font-size: clamp(44px, 5vw, 72px);
+  line-height: .98;
+}
+
+.testimonial-copy p {
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.testimonial-copy p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .testimonial-row,
+  .testimonial-row--reverse {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .testimonial-row--reverse .testimonial-photo,
+  .testimonial-row--reverse .testimonial-copy {
+    order: initial;
+  }
+
+  .testimonial-copy {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  .testimonial-stack {
+    gap: 78px;
+  }
+
+  .testimonial-row {
+    gap: 28px;
+  }
+
+  .testimonial-copy h2 {
+    margin-bottom: 20px;
+    font-size: clamp(38px, 11vw, 52px);
+  }
+
+  .testimonial-copy p {
+    font-size: 17px;
+    line-height: 1.75;
+  }
+}

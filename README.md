@@ -29,3 +29,17 @@ Static website built for GitHub Pages.
 ## GitHub Pages
 Upload the contents of this folder to the repository root. Then go to:
 Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
+
+## V3 visual updates
+- Uses the supplied Bedrock Ministries logo in the header.
+- Uses the supplied cream B mark in the footer.
+- Increased body copy and navigation size for readability.
+- Removed the numbered mini labels above the two homepage pathways.
+- Changed site imagery to preserve natural photo proportions instead of forced crops.
+- Increased header height and logo presence.
+- Added additional mobile layout tuning for 320px to 430px screens.
+
+## V4 stories update
+- Restored the full resident testimonial copy supplied by Bedrock for Colin and Cami Crook, Juan and Rachel Rodriguez, Lex and Tiff Bibbs, and Justin and Hannah Lewis.
+- Testimonial wording is preserved as provided rather than rewritten.
+- Stories now use alternating photo and text sections on desktop and a photo-first stacked layout on mobile.
