@@ -43,3 +43,13 @@ Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
 - Restored the full resident testimonial copy supplied by Bedrock for Colin and Cami Crook, Juan and Rachel Rodriguez, Lex and Tiff Bibbs, and Justin and Hannah Lewis.
 - Testimonial wording is preserved as provided rather than rewritten.
 - Stories now use alternating photo and text sections on desktop and a photo-first stacked layout on mobile.
+
+## V5 design pass
+- Rebuilt the homepage around mission, why Bedrock exists, values, the two visitor paths, the Bedrock model, and impact.
+- Simplified headings across every page and removed the small editorial labels.
+- Rebuilt the About page mission section to eliminate the oversized empty left column.
+- Standardized desktop and mobile section spacing.
+- Reduced oversized internal heading scale while keeping the editorial serif style.
+- Simplified Find Housing and Create Margin headings for faster scanning.
+- Removed editorial summary headlines from resident testimonials so their original words carry the Stories page.
+- Added intentional 4:3 crops to paired homepage pathway images while preserving natural proportions elsewhere.
