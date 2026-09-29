@@ -53,3 +53,10 @@ Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
 - Simplified Find Housing and Create Margin headings for faster scanning.
 - Removed editorial summary headlines from resident testimonials so their original words carry the Stories page.
 - Added intentional 4:3 crops to paired homepage pathway images while preserving natural proportions elsewhere.
+
+## V6 clean CSS rebuild
+- Replaced the accumulated multi-version stylesheet with one clean stylesheet.
+- Standardized page margins, section spacing, heading sizes, body copy, image gaps, and mobile breakpoints.
+- Reduced internal heading scale so page heroes retain clear visual priority.
+- Constrained the Create Margin hero image to improve perceived image quality.
+- Reworked the board to three columns on desktop, two on tablet, one on mobile.
