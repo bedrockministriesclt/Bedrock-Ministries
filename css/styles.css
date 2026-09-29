@@ -1321,3 +1321,33 @@ summary:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* V7 language + hero CTA polish */
+.button.outline {
+  border-color: var(--slate);
+  background: transparent;
+  color: var(--slate);
+}
+.button.outline:hover {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: var(--cream);
+}
+.page-home .hero-actions {
+  gap: 14px;
+}
+.page-home .hero-actions .button {
+  min-width: 190px;
+}
+@media (max-width: 620px) {
+  .page-home .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 360px;
+  }
+  .page-home .hero-actions .button {
+    width: 100%;
+    min-width: 0;
+  }
+}

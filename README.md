@@ -60,3 +60,10 @@ Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
 - Reduced internal heading scale so page heroes retain clear visual priority.
 - Constrained the Create Margin hero image to improve perceived image quality.
 - Reworked the board to three columns on desktop, two on tablet, one on mobile.
+
+## V7 language update
+- Replaced “Find Housing” with “Resident Program” in navigation and footer.
+- Replaced “Create Margin” navigation language with “Support Bedrock.”
+- Homepage hero now uses equal “Explore the Program” and “Support Bedrock” buttons.
+- Resident page now opens with “The Bedrock Program” and uses “Start an Inquiry” after visitors learn how the program works.
+- Support page now opens with “Support Bedrock” while preserving “create margin” as a brand concept within the copy.
